@@ -1,9 +1,7 @@
 # Automatic Image Captioning
 > Image caption generation in PyTorch using an encoder-decoder architecture
 
-<p align="center">
-  <img  src="docs/img/example.png" width="55%">
-</p>
+![example](https://github.com/user-attachments/assets/8dd9efaa-7aab-4bad-b9dd-25be4bc6038c)
 
 ## Overview
 This work implements a variant model based on the paper [Show and Tell: A Neural Image Caption Generator](https://arxiv.org/pdf/1411.4555.pdf). Given an image, the model is able to describe in natural language the contents of the image. The model is comprised of the encoder, a pretrained CNN, which extracts high-level features from the image and feeds them to the decoder, an LSTM, which generates the sequences of words. 
@@ -32,4 +30,4 @@ For a detailed example, check the training notebook under  [`./notebooks/trainin
 # Notes
 * The best model obtained after training and hyperparameter tuning achieves an average BLEU score on the test split of 11, compared to 27.2 of the original paper.
 * The model works best with pictures similar to those it has been trained on. In the case of Flickr8k, pictures with one or two subjects doing some simple activities. It works pretty good with dogs playing around and people engaging in a couple of sports (e.g. surfing, trekking on mountains).
-* The demo is made in Vue.js for the frontend and FastAPI for the backend. The backend is deployed on Heroku, and if it's the first time running in a while it does take a couple of minutes to start up and generate the first caption, after that it usually takes a dozen seconds. If running the demo locally (You can if you have Docker Compose) caption generation takes about 5 seconds.
+* If it's the first time running in a while it does take a couple of minutes to start up and generate the first caption, after that it usually takes a dozen seconds. If running it locally (You can if you have Docker Compose) caption generation takes about 5 seconds.
