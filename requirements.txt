@@ -1,0 +1,14 @@
+notebook
+jupyter_contrib_nbextensions
+jupyter_nbextensions_configurator
+torch
+torchvision
+fastprogress
+numpy
+pandas
+matplotlib
+seaborn
+nltk
+wordcloud
+ax-platform
+wandb
